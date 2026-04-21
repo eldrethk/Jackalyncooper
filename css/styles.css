@@ -11,10 +11,10 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --bs-blue: #1e30f3;
-  --bs-indigo: #6610f2;
-  --bs-purple: #6f42c1;
-  --bs-pink: #e21e80;
+  --bs-blue: #1a1a2e;
+  --bs-indigo: #2a2a40;
+  --bs-purple: #3a3a5a;
+  --bs-pink: #d4af37;
   --bs-red: #dc3545;
   --bs-orange: #fd7e14;
   --bs-yellow: #ffc107;
@@ -34,16 +34,16 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #1e30f3;
-  --bs-secondary: #e21e80;
+  --bs-primary: #1a1a2e;
+  --bs-secondary: #3a3a5a;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 30, 48, 243;
-  --bs-secondary-rgb: 226, 30, 128;
+  --bs-primary-rgb: 26, 26, 46;
+  --bs-secondary-rgb: 58, 58, 90;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
@@ -73,9 +73,9 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #1e30f3;
-  --bs-link-hover-color: #1826c2;
-  --bs-code-color: #e21e80;
+  --bs-link-color: #1a1a2e;
+  --bs-link-hover-color: #3a3a5a;
+  --bs-code-color: #3a3a5a;
   --bs-highlight-bg: #fff3cd;
 }
 
@@ -11731,4 +11731,87 @@ html {
     width: 1.5vw;
     left: -2vw;
   }
+}
+
+.bg-gradient-primary-to-secondary {
+  background: linear-gradient(135deg, #1a1a2e 0%, #3a3a5a 100%);
+}
+
+.text-gradient {
+  color: #1a1a2e;
+  background: none;
+  -webkit-text-fill-color: unset;
+}
+
+.btn-primary {
+  background-color: #1a1a2e;
+  border-color: #1a1a2e;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #3a3a5a;
+  border-color: #3a3a5a;
+}
+
+.btn-outline-dark {
+  color: #1a1a2e;
+  border-color: #1a1a2e;
+}
+
+.btn-outline-dark:hover,
+.btn-outline-dark:focus,
+.btn-outline-dark:active {
+  background-color: #1a1a2e;
+  border-color: #1a1a2e;
+  color: #fff;
+}
+
+.feature {
+  width: 3rem;
+  height: 3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #1a1a2e;
+  font-size: 1.25rem;
+}
+
+.navbar .nav-link {
+  color: #1a1a2e;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #3a3a5a;
+}
+
+.profile-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.12);
+}
+
+.card {
+  border-radius: 1rem;
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+.text-muted {
+  color: #6c757d !important;
+}
+
+a {
+  color: #1a1a2e;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #3a3a5a;
+  text-decoration: none;
 }
