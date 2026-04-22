@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white py-3 border-bottom">
+    <div class="container px-5">
+        <a class="navbar-brand" href="{{ '/' | relative_url }}">
+            <span class="fw-bolder text-dark">Jackalyn Cooper</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-semibold">
+                <li class="nav-item"><a class="nav-link{% if page.url == '/' %} active{% endif %}" href="{{ '/' | relative_url }}">Home</a></li>
+                <li class="nav-item"><a class="nav-link{% if page.url == '/resume.html' %} active{% endif %}" href="{{ '/resume.html' | relative_url }}">Resume</a></li>
+                <li class="nav-item"><a class="nav-link{% if page.url == '/media.html' %} active{% endif %}" href="{{ '/media.html' | relative_url }}">Media</a></li>
+                <li class="nav-item"><a class="nav-link{% if page.url == '/contact.html' %} active{% endif %}" href="{{ '/contact.html' | relative_url }}">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
