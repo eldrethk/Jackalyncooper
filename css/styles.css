@@ -11940,3 +11940,11 @@ a:hover {
 .gallery-img.verticalcenter, .card-img-top.project-cover.verticalcenter {
     object-position: 20% 20%;
 }
+
+@media (max-width: 576px) {
+    .hero-badge {
+        display: inline-block;
+        font-size: 0.75rem;
+        padding: 0.75rem !important;
+    }
+}
