@@ -1,0 +1,62 @@
+---
+layout: default
+title: Project 1 | Jackalyn Cooper
+---
+
+<section class="py-5">
+    <div class="container px-5">
+
+        <!-- Back Button -->
+        <div class="mb-4">
+            <a href="media.html" class="btn btn-outline-dark btn-sm">← Back to Projects</a>
+        </div>
+
+		 <div class="text-center mb-5">
+            <h1 class="display-5 fw-bolder mb-0">
+                <span class="text-gradient d-inline">Lord of the Flies</span>
+            </h1>
+        </div>
+
+        <!-- Gallery Grid -->
+<div class="row g-4">
+
+    <div class="col-12 col-md-6"><img src="/assets/lordflies01.jpg" class="gallery-img" alt=""></div>
+    <div class="col-12 col-md-6"><img src="/assets/lordflies02.jpg" class="gallery-img" alt=""></div>
+    <div class="col-12 col-md-6"><img src="/assets/lordflies03.jpg" class="gallery-img" alt=""></div>
+    <div class="col-12 col-md-6"><img src="/assets/lordflies04.jpg" class="gallery-img" alt=""></div>
+    <div class="col-12 col-md-6"><img src="/assets/lordflies05.jpg" class="gallery-img" alt=""></div>
+   
+</div>
+       
+    </div>
+</section>
+
+<!-- Lightbox Modal -->
+<div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+</div>
+
+<script>
+    const images = document.querySelectorAll('.gallery-img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const closeBtn = document.querySelector('.lightbox-close');
+
+    images.forEach(img => {
+        img.addEventListener('click', () => {
+            lightbox.style.display = 'flex';
+            lightboxImg.src = img.src;
+        });
+    });
+
+    closeBtn.onclick = () => {
+        lightbox.style.display = 'none';
+    };
+
+    lightbox.onclick = (e) => {
+        if (e.target !== lightboxImg) {
+            lightbox.style.display = 'none';
+        }
+    };
+</script>
