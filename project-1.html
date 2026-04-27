@@ -1,0 +1,79 @@
+---
+layout: default
+title: Project 1 | Jackalyn Cooper
+---
+
+<section class="py-5">
+    <div class="container px-5">
+
+        <!-- Back Button -->
+        <div class="mb-4">
+            <a href="projects.html" class="btn btn-outline-dark btn-sm">← Back to Projects</a>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="row g-4">
+
+            <!-- Image 1 -->
+            <div class="col-12 col-md-6">
+                <img src="/assets/gatheragain01.jpg" class="gallery-img" alt="">
+            </div>
+
+            <!-- Image 2 -->
+            <div class="col-12 col-md-6">
+                <img src="/assets/gatheragain02.jpg" class="gallery-img" alt="">
+            </div>
+
+            <!-- Image 3 -->
+            <div class="col-12 col-md-6">
+                <img src="/assets/gatheragain03.jpg" class="gallery-img" alt="">
+            </div>
+
+            <!-- Image 4 -->
+            <div class="col-12 col-md-6">
+                <img src="/assets/gatheragain04.jpg" class="gallery-img" alt="">
+            </div>
+
+            <!-- Image 5 -->
+            <div class="col-12 col-md-6">
+                <img src="/assets/gatheragain05.jpg" class="gallery-img" alt="">
+            </div>
+
+            <!-- Image 6 -->
+            <div class="col-12 col-md-6">
+                <img src="/assets/gatheragain06.jpg" class="gallery-img" alt="">
+            </div>            
+
+        </div>
+    </div>
+</section>
+
+<!-- Lightbox Modal -->
+<div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+</div>
+
+<script>
+    const images = document.querySelectorAll('.gallery-img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const closeBtn = document.querySelector('.lightbox-close');
+
+    images.forEach(img => {
+        img.addEventListener('click', () => {
+            lightbox.style.display = 'flex';
+            lightboxImg.src = img.src;
+        });
+    });
+
+    closeBtn.onclick = () => {
+        lightbox.style.display = 'none';
+    };
+
+    lightbox.onclick = (e) => {
+        if (e.target !== lightboxImg) {
+            lightbox.style.display = 'none';
+        }
+    };
+</script>
