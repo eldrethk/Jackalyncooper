@@ -11815,3 +11815,30 @@ a:hover {
   color: #3a3a5a;
   text-decoration: none;
 }
+
+
+.resume-card-title {
+    font-size: 1.4rem;
+}
+
+.resume-info-box {
+    min-width: 175px;
+}
+
+.resume-card ul {
+    padding-left: 1.25rem;
+}
+
+.resume-card ul li {
+    margin-bottom: 0.45rem;
+}
+
+@media (max-width: 768px) {
+    .resume-info-box {
+        width: 100%;
+        text-align: left !important;
+        margin-top: 10px;
+    }
+}
+
+
