@@ -11841,4 +11841,25 @@ a:hover {
     }
 }
 
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.skill-item {
+    background: #f8f9fa;
+    border-radius: 1rem;
+    padding: 1rem;
+    min-height: 64px;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 
