@@ -11945,6 +11945,6 @@ a:hover {
     .hero-badge {
         display: inline-block;
         font-size: 0.75rem;
-        padding: 0.75rem !important;
+        padding: 0.5rem !important;
     }
 }
