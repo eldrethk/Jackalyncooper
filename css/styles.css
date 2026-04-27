@@ -11936,3 +11936,7 @@ a:hover {
 .gallery-img.vertical {
     object-position: top;
 }
+
+.gallery-img.verticalcenter {
+    object-position: 20% 20%;
+}
