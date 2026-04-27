@@ -11933,10 +11933,10 @@ a:hover {
 }
 
 /* Fix for vertical images */
-.gallery-img.vertical {
+.gallery-img.vertical, .card-img-top.project-cover.vertical{
     object-position: top;
 }
 
-.gallery-img.verticalcenter {
+.gallery-img.verticalcenter, .card-img-top.project-cover.verticalcenter {
     object-position: 20% 20%;
 }
